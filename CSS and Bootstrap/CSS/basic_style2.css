@@ -3,9 +3,9 @@ body {
 }
 
 h1 {
-    color: rgba{8,141,165,1};
+    color: rgba(8,141,165,1);
     margin-left: 100px;
-    text-shadow: 1px .5px 4px rgba{0,0,0, 0.6};
+    text-shadow: 1px .5px 4px rgba(0,0,0, 0.6);
 }
 
 .container {
@@ -100,6 +100,6 @@ h1 {
         background-image: url("../Images/Icons/smileyface1.png");
     }
     50% {
-        transfrom: translateY(330px);
+        transform: translateY(330px);
     }
 }
