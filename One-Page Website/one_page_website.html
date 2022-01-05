@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>The Choice</title>
 		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<script src="JS/one_page_website.js"></script>
 	</head>
 	<body>	
 		<!-- NAV -->
@@ -14,30 +15,88 @@
 				<a href="#Contact"><li>CONTACT</li></a>
 			</ul>
 		</div>
-		<!--END NAV -->
+		<!-- END NAV -->
 		
-		<!--HOME -->
+		<!-- HOME -->
 		<div id="Home">
 			<div>
 				<h1>The Choice</h1>
 			</div>
 		</div>
-		<!--END HOME -->
+		<!-- END HOME -->
 		
-		<!--PICTURES -->
-			<section>
-			<div id="PICTURES">
-					<div>
-						<img src="Thumbnail_1.png" width="560" height="315" alt="Hell">
+		<!-- PICTURES -->
+		<section>
+			<div class="row">
+					<div class="column">
+						<img src="Thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" width="560" height="315">
 					</div>
-					<div>
-						<img src="Thumbnail_2.png"  width="560" height="315"alt="Heaven">
+					<div class="column">
+						<img src="Thumbnail_2.png"  onclick="openModal();currentslide(2)" class="hover-shadow" width="560" height="315">
+					</div>
+					<div class="column">
+						<img src="Thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" width="560" height="315">
+					</div>
+					<div class="column">
+						<img src="Thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow" width="560" height="315">
 					</div>
 					<div>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/SLYMCuCdJlQ" title="Wages of Sin" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 			</div>
-			</section>
+
+			<!--The Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="Thumbnail_1.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="Thumbnail_2.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="Thumbnail_3.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="Thumbnail_4.png" style="width:100%">
+					</div>
+
+					<!-- Next/previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="demo" src="Thumbnail_1.png" onclick="currentSlide(1)" alt="Hell">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="Thumbnail_2.png" onclick="currentSlide(1)" alt="Heaven">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="Thumbnail_3.png" onclick="currentSlide(1)" alt="Satan">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="Thumbnail_4.png" onclick="currentSlide(1)" alt="Jesus Christ">
+					</div>
+				</div>
+		</section>
 		<!--END PICTURES -->
 		
 		<!-- CONTACT -->
