@@ -49,7 +49,7 @@ p {
     font-family: Perpetua, Rockwell Extra Bold;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
-    font-size: .5vw; /* Relative font size equal to 2.5% of the viewport width */
+    font-size: 2.5vw; /* Relative font size equal to 2.5% of the viewport width */
     padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
     padding-right: 1vw; /* Relative padding equal to 1% of the viewport width */
 }
@@ -73,7 +73,7 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: rgb(0, 255, 13); /* This ensures all links are blue */
+    color: rgb(6, 87, 10); /* This ensures all links are blue */
     cursor: pointer; /* This ensures all links change the mouse to a pointer when hovered over or clicked */
     text-decoration: underline; /* This ensures all links are underlined */
 }
@@ -127,7 +127,7 @@ footer {
 .Navbar a {
     float: left; /* This specifies that the text floats on the left on the navbar */
     display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
-    color: rgb(12, 117, 44); /* This is the font color for text on our navbar */
+    color: rgb(9, 110, 41); /* This is the font color for text on our navbar */
     padding: .75vw 1vw; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
@@ -315,7 +315,7 @@ footer {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 1.6%;
-    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: 500px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #44d875; /* Sets the background color of the left columns */
 }
 
@@ -323,7 +323,7 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 400px;
+    height: 500px;
     background-color: #05240f;
 }
 
